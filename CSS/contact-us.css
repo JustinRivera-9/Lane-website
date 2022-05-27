@@ -1,10 +1,13 @@
+/* THIS IS THE CONTACT-US PAGE */
+/*-------------------------------------- */
+
 html {
     font-size: 16px;
     margin: 0;
 }
 
 * {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 body {
