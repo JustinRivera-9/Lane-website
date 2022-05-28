@@ -12,19 +12,69 @@
     <nav class="header">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="/HTML/home-page.html">Home</a>
+          <a href="/HTML/home.html">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#">Projects</a>
+          <a href="/HTML/projects.html">Projects</a>
         </li>
         <li class="nav-item">
-          <a href="#">About Us</a>
+          <a href="/HTML/about.html">About Us</a>
         </li>
         <li class="nav-item">
           <a href="/HTML/contact-us.html"> Contact Us</a>
         </li>
       </ul>
     </nav>
-    <nav></nav>
+    <nav class="form">
+      <form action="" method="post">
+        <h1>Looking to Start A New Project?</h1>
+        <h2>
+          Fill out the form below and we will get back to you within 3-5 days.
+          Thank You!
+        </h2>
+        <hr>
+        <section class="contact-info">
+          <h3>Contact Information</h3>
+          <label for="name">Full Name</label>
+          <input type="text" name="full-name" id="name" required />
+          <label for="email">Enter Email</label>
+          <input type="text" name="email" id="email" required />
+          <label for="phone-number">Phone Number</em></label>
+          <input
+            type="tel"
+            name="phone-number"
+            id="phone-number"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="123-555-5555"
+          />
+        </section>
+        <hr />
+        <h3>How did you hear about us?</h3>
+        <section class="reference">
+          <label for="google">Google</label>
+          <input type="checkbox" name="reference" id="google" value="google" />
+          <label for="social">Social Media</label>
+          <input type="checkbox" name="reference" id="social" value="social" />
+          <label for="friends">Friends & Family</label>
+          <input type="checkbox" name="reference" id="friend" value="friend" />
+          <label for="client">Previous Client</label>
+          <input type="checkbox" name="reference" id="client" value="client" />
+        </section>
+        <hr />
+        <section class="message">
+          <h3>Let us know what services you are looking for!</h3>
+          <label for="message"></label>
+          <textarea
+            name="message"
+            id="message"
+            rows="10"
+            cols="100"
+            required
+          ></textarea>
+        </section>
+        <input type="submit" />
+      </form>
+    </nav>
   </body>
 </html>

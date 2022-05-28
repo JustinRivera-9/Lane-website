@@ -4,62 +4,124 @@
 html {
     font-size: 16px;
     margin: 0;
-}
-
-* {
-    border: 1px solid red;
+    padding: 0;
 }
 
 body {
-    background-color: #f0f7f8;
+    margin: 0;
+    padding: 0;
+    background-color: #DADAD2;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* NAVIGATION BAR */
 
 .nav-list {
-    height: 2rem;
-    background-color: white;
-    box-shadow: 0px 0px 10px #cfd8dc;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #546A7B;
+    box-shadow: 0px 0px 10px #A6C2C9;
     margin: 0;
     padding: 1rem 0;
     border-radius: 0.2rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .nav-item {
     list-style: none;
-    margin-right: 2rem;
     font-size: 1.5rem;
+    float: left;
+    margin: 0 .25rem;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: black;
-}
-
-.nav-item:first-child {
-    margin-right: auto;
-    margin-left: 2rem;
-}
-
-#contact-button {
-    background-color: rgba(172, 172, 255, 0.486);
-    border-radius: 10px;
-    font-size: large;
+    color: white;
+    padding: 1rem 3rem;
 }
 
 .nav-item a:hover {
-    color: blue;
+    color: black;
     text-decoration: underline;
+    background-color: #A6C2C9;
+    border-radius: 3%;
 }
 
-#contact-button:hover {
-    background-color: rgba(92, 92, 255, 0.699);
+/* FORM FIELDS */
+
+form {
+    position: absolute;
+    top: 60px;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    height: 80%;
+    overflow: auto;
+  }
+
+form hr {
+    width: 40%;
+    margin: 2.5rem auto;
+    border: 1px solid black;
 }
 
-#contact-button a:hover {
+input[type=text], input[type="tel"] {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 5px auto;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+form label {
+    color: #475a69;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.reference {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+label {
+    margin-right: 3rem;
+}
+
+input[type="submit"] {
+    margin-top: .75rem;
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: #475a69;
     color: white;
-    text-decoration: none;
+}
+
+input[type="submit"]:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: #A6C2C9;
+    cursor: pointer;
+}
+
+textarea {
+    margin: 0 auto;
 }
