@@ -73,8 +73,9 @@ input[type=text], input[type="tel"] {
     padding: 12px 20px;
     margin: 5px auto;
     display: block;
-    border-radius: 4px;
+    border-radius: 7.5px;
     box-sizing: border-box;
+    border: 1px solid grey;
   }
 
 form label {
@@ -124,4 +125,5 @@ input[type="submit"]:hover {
 
 textarea {
     margin: 0 auto;
+    border-radius: 10px;
 }
