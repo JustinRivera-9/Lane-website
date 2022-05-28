@@ -52,18 +52,18 @@ body {
 /* FORM FIELDS */
 
 form {
-    position: absolute;
+    position: relative;
     top: 60px;
     z-index: 10;
     width: 100%;
     text-align: center;
     line-height: 30px;
-    height: 80%;
+    height: 100%;
     overflow: auto;
   }
 
 form hr {
-    width: 40%;
+    width: 30%;
     margin: 2.5rem auto;
     border: 1px solid black;
 }
@@ -71,7 +71,7 @@ form hr {
 input[type=text], input[type="tel"] {
     width: 35%;
     padding: 12px 20px;
-    margin: 5px auto;
+    margin: 5px auto 25px;
     display: block;
     border-radius: 7.5px;
     box-sizing: border-box;
@@ -82,6 +82,7 @@ form label {
     color: #475a69;
     font-size: 1.25rem;
     font-weight: 700;
+    margin-right: 3rem;
 }
 
 h1 {
@@ -103,12 +104,9 @@ h3 {
     align-items: center;
   }
   
-label {
-    margin-right: 3rem;
-}
-
 input[type="submit"] {
     margin-top: .75rem;
+    margin-right: 40px;
     padding: .5rem;
     border-radius: 10px;
     font-size: 1.5rem;
@@ -119,11 +117,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
     color: black;
     text-decoration: underline;
-    background-color: #A6C2C9;
+    background-color: lightgray;
     cursor: pointer;
 }
 
 textarea {
-    margin: 0 auto;
     border-radius: 10px;
+    margin-right: 50px;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
