@@ -93,21 +93,40 @@ body {
 /* ABOUT FOUNDERS SECTION */
 
 .about-container {
-
+    margin-top: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
 }
 
-.image {
-
+.image img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
 #left-side {
-
+    grid-column: 1 / span 1;
+    grid-row: 1;
 }
 
 #right-side {
-
+    grid-column: 3 / span 1;
+    grid-row: 1;
 }
 
 .about-text {
-    
+    grid-column: 2 / span 1;
+    grid-row: 1;
 }
+
+.name {
+    grid-column: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+/* OUR SERVICES SECTION */
+
