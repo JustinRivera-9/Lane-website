@@ -1,4 +1,4 @@
-/* THIS IS THE CONTACT-US PAGE */
+/* THIS IS THE HOME PAGE */
 /*-------------------------------------- */
 
 html {
@@ -50,7 +50,64 @@ body {
 }
 
 /* MAIN BANNER */
-.main-banner img {
+
+.main-banner {
+    height: 450px;
+    width: 100%;
+    background-image: url(/Resources/Project-Images/Barn-Sunset-modified.jpg);
+    text-align: center;
+}
+
+.main-banner h1 {
     position: relative;
-    top: 5rem;
+    margin: auto;
+    width: 40%;
+    top: 180px;
+    font-size: 3rem;
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.37);
+    color: white;
+}
+
+.main-banner a {
+    position: relative;
+    top: 210px;
+    padding: .25rem .5rem;
+    font-size: 1.2rem;
+    border: 3px solid #475a69;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+
+}
+
+.main-banner a:hover {
+    color: white;
+    border: 1.5px solid white;
+    text-decoration: underline;
+    background-color: #4e6a80c0;
+    cursor: pointer;
+}
+
+/* ABOUT FOUNDERS SECTION */
+
+.about-container {
+
+}
+
+.image {
+
+}
+
+#left-side {
+
+}
+
+#right-side {
+
+}
+
+.about-text {
+    
 }
