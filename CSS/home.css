@@ -10,6 +10,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    display: block;
     background-color: #DADAD2;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -20,8 +21,8 @@ body {
     position: fixed;
     z-index: 100;
     width: 100%;
-    background-color: #546A7B;
-    box-shadow: 0px 0px 10px #A6C2C9;
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
     margin: 0;
     padding: 1rem 0;
     border-radius: 0.2rem;
@@ -38,14 +39,14 @@ body {
 
 .nav-item a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 1rem 3rem;
 }
 
 .nav-item a:hover {
-    color: black;
+    color: white;
     text-decoration: underline;
-    background-color: #A6C2C9;
+    background-color: black;
     border-radius: 3%;
 }
 
@@ -65,8 +66,9 @@ body {
     top: 180px;
     font-size: 3rem;
     text-align: center;
-    background-color: hsla(0, 0%, 0%, 0.37);
-    color: white;
+    background-color: hsla(0, 0%, 100%, 0.30);
+    border-radius: 10px;
+    color: black;
 }
 
 .main-banner a {
@@ -74,16 +76,16 @@ body {
     top: 210px;
     padding: .25rem .5rem;
     font-size: 1.2rem;
-    border: 3px solid #475a69;
+    border: 2px solid gray;
     text-decoration: none;
     border-radius: 10px;
-    background-color: white;
     color: black;
-
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
 }
 
 .main-banner a:hover {
-    color: white;
+    color: black;
     border: 1.5px solid white;
     text-decoration: underline;
     background-color: #4e6a80c0;
@@ -106,27 +108,30 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     height: 225px;
-    border: 1px solid red;
 }
 
 .left-side {
     grid-column: 1 / span 1;
     grid-row: 1;
+    border: 1px solid red;
 }
 
 .right-side {
     grid-column: 3 / span 1;
     grid-row: 1;
+    border: 1px solid red;
 }
 
 .middle {
     grid-column: 2 / span 1;
     grid-row: 1;
+    border: 1px solid red;
+
 }
 
-.left-side h3 {
-    position: absolute;
-    bottom: 50px;
+.name {
+    position: relative;
+    border: 1px solid red;
 }
 
 .middle a {
@@ -137,7 +142,6 @@ body {
     border-radius: 3px;
     background-color: #475a69;
     color: white;
-
 }
 
 .middle a:hover {
@@ -146,15 +150,24 @@ body {
     text-decoration: underline;
     background-color: white;
     cursor: pointer;
-
+}
 
 /* OUR SERVICES SECTION */
 
+.services {
+    position: relative;
+    top: 5rem;
+    margin: 1.5rem auto;
+    border: 1px solid red;
+}
+
 .services-container {
     margin-top: 0.75rem;
+    position: relative;
+    top: 5rem;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 15rem;
+    grid-template-rows: 12rem;
     text-align: center;
 }
