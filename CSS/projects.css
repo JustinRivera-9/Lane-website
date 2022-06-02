@@ -1,4 +1,4 @@
-/* THIS IS THE CONTACT-US PAGE */
+/* THIS IS THE PAGE PAGE */
 /*-------------------------------------- */
 
 html {
@@ -17,11 +17,11 @@ body {
 /* NAVIGATION BAR */
 
 .nav-list {
-    position: fixed;
+    position: relative;
     z-index: 100;
     width: 100%;
-    background-color: #546A7B;
-    box-shadow: 0px 0px 10px #A6C2C9;
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
     margin: 0;
     padding: 1rem 0;
     border-radius: 0.2rem;
@@ -38,15 +38,97 @@ body {
 
 .nav-item a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 1rem 3rem;
 }
 
 .nav-item a:hover {
-    color: black;
+    color: white;
     text-decoration: underline;
-    background-color: #A6C2C9;
+    background-color: black;
     border-radius: 3%;
 }
 
-/*  */
+/* PROJECT STYLES */
+
+.text-heading {
+    text-align: center;
+    line-height: 10px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 350px);
+    gap: 10px;
+    place-items: center;
+    margin: 25px 10px;
+    font-size: 2.25rem;
+    
+}
+
+.residential {
+    background-image: url(/Resources/Project-Images/House-Interior.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 350px;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.commercial {
+    background-image: url(/Resources/Project-Images/commercial.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 350px;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.healthcare {
+    background-image: url(/Resources/Project-Images/healthcare.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 350px;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.education {
+    background-image: url(/Resources/Project-Images/education.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 350px;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.ti {
+    background-image: url(/Resources/Project-Images/ti.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 350px;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.civil {
+    background-image: url(/Resources/Project-Images/civil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 350px;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
