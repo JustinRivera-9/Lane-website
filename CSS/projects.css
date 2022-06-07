@@ -56,79 +56,96 @@ body {
     line-height: 10px;
 }
 
+em {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 350px);
+    grid-auto-rows: 500px;
     gap: 10px;
-    place-items: center;
-    margin: 25px 10px;
-    font-size: 2.25rem;
-    
+    margin: 0 10px;
 }
 
-.residential {
-    background-image: url(/Resources/Project-Images/House-Interior.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    line-height: 350px;
-    height: 100%;
-    width: 100%;
-    color: black;
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
 }
 
-.commercial {
-    background-image: url(/Resources/Project-Images/commercial.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    line-height: 350px;
-    height: 100%;
+.img-wrapper > img {
+    display: block;
     width: 100%;
-    color: black;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
-.healthcare {
-    background-image: url(/Resources/Project-Images/healthcare.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    line-height: 350px;
+.img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 4rem;
+    padding: .5rem;
+    background: rgba(255, 255, 255, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 100%;
-    color: black;
 }
 
-.education {
-    background-image: url(/Resources/Project-Images/education.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    line-height: 350px;
-    height: 100%;
-    width: 100%;
-    color: black;
+.img-wrapper > img,
+.img-wrapper > .content {
+    transition: 200ms ease-in-out;
 }
 
-.ti {
-    background-image: url(/Resources/Project-Images/ti.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    line-height: 350px;
-    height: 100%;
-    width: 100%;
-    color: black;
+.img-wrapper:hover > img.blur {
+    filter: blur(1px);
 }
 
-.civil {
-    background-image: url(/Resources/Project-Images/civil.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    line-height: 350px;
-    height: 100%;
-    width: 100%;
-    color: black;
+.img-wrapper:hover > img.zoom {
+    transform: scale(1.05);
+}
+
+.img-wrapper > .content.fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover > .content.fade {
+    opacity: 1;
+}
+
+.img-wrapper > .content.slide-down {
+    transform: translateY(-100%);
+}
+
+.img-wrapper:hover > .content.slide-down {
+    transform: translateY(0);
+}
+
+.img-wrapper > .content.slide-up {
+    transform: translateY(100%);
+}
+
+.img-wrapper:hover > .content.slide-up {
+    transform: translateY(0);
+}
+
+.img-wrapper > .content.slide-left {
+    transform: translateX(-100%);
+}
+
+.img-wrapper:hover > .content.slide-left {
+    transform: translateX(0);
+}
+
+.img-wrapper > .content.slide-right {
+    transform: translateX(100%);
+}
+
+.img-wrapper:hover > .content.slide-right {
+    transform: translateX(0);
 }
